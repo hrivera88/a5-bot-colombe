@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.message {
+  letter-spacing: 0.35px;
+}
+.message p {
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+.message a {
+  color: #fff;
+  text-decoration: underline;
+}
+.message iframe {
+  border: 0;
+  margin: 5px 0;
+}
+.message img {
+  width: auto;
+  max-width: 350px;
+}
+.emojiImg {
+  height: 24px;
+  width: 24px;
+  vertical-align: bottom;
+}
+/* .message img {
+  width: auto;
+  height: auto;
+  max-width: 34px;
+  max-height: 34px;
+} */
+/* .message span {
+  font-size: 34px;
+} */
+.emoji-mart-anchor {
+  color: #006fba !important;
+}
+.emoji-mart-anchor-bar {
+  background-color: #006fba !important;
+}

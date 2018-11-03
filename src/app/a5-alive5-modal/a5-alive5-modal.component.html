@@ -1,0 +1,8 @@
+<div class="alivepay-modal" [ngClass]="{'show': showModal}">
+  <div class="window-wrapper" [ngClass]="{'active': showModal}" [@modalVisibility]="showModal">
+    <iframe src="https://pay.alive5.com/qdQ3"></iframe>
+    <div class="hide-alivepay-modal">
+      <button class="btn" (click)="hideModal()">Cancel</button>
+    </div>
+  </div>
+</div>

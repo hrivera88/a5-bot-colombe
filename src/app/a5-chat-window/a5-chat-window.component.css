@@ -1,0 +1,395 @@
+.window-container {
+  background: #ffffff;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  /*height: 500px;
+      width: 320px;*/
+  height: 100%;
+  width: 100%;
+  /*margin: 2rem auto;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  font-family: "Nunito", sans-serif;
+  overflow: hidden;
+}
+#window-banner {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  text-align: center;
+  border-bottom: 1px solid #972e3c;
+  font-size: 17px;
+  padding: 0.25rem;
+  color: #666;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: space-around;
+  /* background: linear-gradient(to right, #16baa2 0%, #34a5dd 100%); */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/img/colombe-hero.jpg");
+  background-size: cover;
+}
+.hide-chat,
+.end-chat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #006fba;
+}
+.hide-chat fa-icon,
+.end-chat fa-icon {
+  margin-right: 5px;
+  color: #006fba;
+}
+.logo,
+.hide-chat,
+.end-chat {
+  flex: 1;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo img,
+.logo svg {
+  width: auto;
+  height: auto;
+  max-height: 53px;
+  max-width: 177px;
+}
+.logo svg {
+  fill: #fff;
+  transition: all 0.5s ease-in-out;
+}
+#brand-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/img/coffee-beans.jpg");
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 70%;
+  position: relative;
+  height: 45px;
+  min-height: 45px;
+  box-shadow: 0px 6px 4px -6px rgba(0, 0, 0, 0.26);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+#brand-section.cornerstone {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/img/cornerstone-hero.jpg");
+}
+#brand-section.organic {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../../assets/img/organic-hero.jpg");
+}
+#brand-section.alliance {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../../assets/img/alliance-hero.jpg");
+}
+#brand-section.workshop {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../../assets/img/workshop-hero.jpg");
+}
+/*
+.logo-container {
+  position: absolute;
+  top: -40px;
+  left: 30px;
+}
+.logo-circle-border {
+  height: 64px;
+  width: 64px;
+  border-radius: 36px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff;
+}
+.logo-img-container {
+  height: 60px;
+  width: 60px;
+  border-radius: 59px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+}
+.logo-img-container img {
+  width: 100%;
+}
+.logo-img-container div {
+  width: 100%;
+}
+*/
+.brand-welcome-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.chat-icon {
+  margin-right: 7px;
+  margin-bottom: 0px;
+  color: #972e3c;
+}
+.brand-welcome-line p {
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.45px;
+  color: #fff;
+}
+#message-list {
+  overflow: auto;
+  overflow-x: hidden;
+  padding: 12px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 20%;
+  flex: 1 1 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+.bot-menu-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+}
+#dialog-options {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../assets/img/coffee-beans.jpg");
+}
+#dialog-options.cornerstone {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/img/cornerstone-hero.jpg");
+  background-position-y: 50%;
+}
+#dialog-options.organic {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../../assets/img/organic-hero.jpg");
+  background-position-y: 50%;
+}
+#dialog-options.alliance {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../../assets/img/alliance-hero.jpg");
+  background-position-y: 50%;
+}
+#dialog-options.workshop {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../../assets/img/workshop-hero.jpg");
+  background-position-y: 50%;
+}
+#dialog-options button {
+  display: block;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 16px;
+  padding: 0.25rem 1rem;
+  letter-spacing: 0.25px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 6px;
+  background: none;
+  margin-bottom: 6px;
+  font-family: "Nunito", sans-serif;
+}
+#dialog-options button:last-child {
+  margin-right: 0;
+}
+#message-submission {
+  border-top: 2px solid #e0e0e0;
+  padding: 0.52rem 0.25rem;
+  height: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#message-submission div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0.25rem;
+  height: 100%;
+}
+[contenteditable="true"]:empty:not(:focus):before {
+  content: attr(data-ph);
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.bot-option-title,
+.main-menu-options-title,
+.main-menu-btn-title {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+#message-submission input[type="text"] {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-size: 0.75rem;
+  outline: none;
+  border: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  color: #9c9c9c;
+}
+#message-submission button {
+  width: 50px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: #d71920;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 0.25px;
+  font-weight: bold;
+}
+.option-buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.option-buttons-container button {
+  cursor: pointer;
+}
+/* typing indicator CSS based on code by Joseph Fusco -> https://codepen.io/fusco/pen/XbpaYv */
+.typing-indicator {
+  display: table;
+  margin: 0 auto;
+  position: relative;
+}
+.typing-indicator span {
+  height: 5px;
+  width: 5px;
+  float: left;
+  margin: 0 1px;
+  background-color: #fff;
+  display: block;
+  border-radius: 50%;
+  opacity: 0.4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+}
+.typing-indicator span:nth-of-type(1) {
+  -webkit-animation: 1s blink infinite 0.3333s;
+  animation: 1s blink infinite 0.3333s;
+}
+.typing-indicator span:nth-of-type(2) {
+  -webkit-animation: 1s blink infinite 0.6666s;
+  animation: 1s blink infinite 0.6666s;
+}
+.typing-indicator span:nth-of-type(3) {
+  -webkit-animation: 1s blink infinite 0.9999s;
+  animation: 1s blink infinite 0.9999s;
+}
+
+#user-message-input {
+  flex: 2;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  position: relative;
+  font-weight: 300;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #888;
+  border: 0;
+}
+#user-message-input:focus {
+  outline: none;
+}
+#user-message-input img {
+  height: auto;
+  width: auto;
+  max-width: 24px;
+  max-height: 24px;
+  vertical-align: bottom;
+}
+#user-message-input span {
+  font-size: 16px;
+}
+@-webkit-keyframes blink {
+  50% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+}
+@media screen and (max-width: 500px) {
+  .logo img {
+    /* width: 88px; */
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+}
